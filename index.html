@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eman Shahzad — AI Developer & Computer Scientist</title>
+    <meta name="description" content="Portfolio of Eman Shahzad — Computer Science graduate specializing in AI, Machine Learning, and Full-Stack Development. View projects, skills, and experience.">
+    <meta name="keywords" content="Eman Shahzad, AI Developer, Machine Learning, Full Stack Developer, Python, Portfolio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Animated Background Orbs -->
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>ES<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link nav-link-cta">Contact Me</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <canvas id="particleCanvas" class="particle-canvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for Opportunities
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-greeting">Hello, I'm</span>
+                <span class="hero-name">Eman Shahzad</span>
+            </h1>
+            <div class="hero-role">
+                <span class="role-prefix">I build</span>
+                <span class="typed-text" id="typedText"></span>
+                <span class="cursor-blink">|</span>
+            </div>
+            <p class="hero-description">
+                Computer Science graduate from IIUI specializing in <strong>Artificial Intelligence</strong>, 
+                <strong>Machine Learning</strong>, and <strong>Full-Stack Development</strong>. 
+                Transforming complex problems into elegant digital solutions.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>Get In Touch</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="6">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="code-title">portfolio.py</span>
+                </div>
+                <pre class="code-body"><code><span class="code-keyword">class</span> <span class="code-class">Developer</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(<span class="code-param">self</span>):
+        <span class="code-param">self</span>.name = <span class="code-string">"Eman Shahzad"</span>
+        <span class="code-param">self</span>.role = <span class="code-string">"AI Developer"</span>
+        <span class="code-param">self</span>.languages = [
+            <span class="code-string">"Python"</span>, <span class="code-string">"C++"</span>,
+            <span class="code-string">"Java"</span>, <span class="code-string">"JavaScript"</span>
+        ]
+        <span class="code-param">self</span>.passion = <span class="code-string">"Building AI<br>            solutions that matter"</span>
+
+    <span class="code-keyword">def</span> <span class="code-func">get_skills</span>(<span class="code-param">self</span>):
+        <span class="code-keyword">return</span> {
+            <span class="code-string">"AI"</span>: [<span class="code-string">"ML"</span>, <span class="code-string">"NLP"</span>, <span class="code-string">"CV"</span>],
+            <span class="code-string">"Web"</span>: [<span class="code-string">"MERN Stack"</span>],
+            <span class="code-string">"Core"</span>: [<span class="code-string">"DSA"</span>, <span class="code-string">"OOP"</span>]
+        }</code></pre>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-container reveal-left">
+                    <div class="about-image-frame">
+                        <div class="about-image-placeholder">
+                            <div class="avatar-initials">ES</div>
+                            <div class="avatar-ring"></div>
+                        </div>
+                        <div class="about-image-decoration"></div>
+                    </div>
+                    <div class="about-floating-card card-1">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        <span>IIUI Graduate</span>
+                    </div>
+                    <div class="about-floating-card card-2">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        <span>AI Enthusiast</span>
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <h3 class="about-heading">Computer Scientist & AI Developer</h3>
+                    <p class="about-text">
+                        I'm a Computer Science graduate from the <strong>International Islamic University of Islamabad</strong> 
+                        with a strong foundation in programming, artificial intelligence, and web development. 
+                        My journey in tech has been driven by a deep curiosity for solving complex problems using 
+                        intelligent systems.
+                    </p>
+                    <p class="about-text">
+                        From building <strong>neural network-based recommendation systems</strong> to developing 
+                        <strong>AI-powered civil engineering assistants</strong>, I love turning ideas into functional, 
+                        impactful applications. My experience spans the full development lifecycle — from data 
+                        preprocessing and model training to full-stack web deployment.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            <span><strong>Name:</strong> Eman Shahzad</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <span><strong>Phone:</strong> 0317-7904674</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <span><strong>Email:</strong> emanshahzadaislam@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span><strong>Location:</strong> Islamabad, Pakistan</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                            <span><strong>Languages:</strong> English, Urdu, Punjabi</span>
+                        </div>
+                    </div>
+                    <div class="about-actions">
+                        <a href="https://linkedin.com/in/eman-shahzad-06bbb6250" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="mailto:emanshahzadaislam@gmail.com" class="social-link" aria-label="Email">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </a>
+                        <a href="https://github.com/Emanshahzadazam" target="_blank" class="social-link" aria-label="GitHub">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Technical Arsenal</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+
+            <div class="skills-categories">
+                <!-- Programming Languages -->
+                <div class="skill-category reveal-up">
+                    <div class="category-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
+                    <h3 class="category-title">Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>Python</span><span>90%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>JavaScript</span><span>85%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>Java</span><span>80%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>C++</span><span>75%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & Machine Learning -->
+                <div class="skill-category reveal-up" style="--delay: 0.1s">
+                    <div class="category-icon ai-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 1 4 4c0 1.1-.4 2.1-1.1 2.9L12 12l-2.9-3.1A4 4 0 0 1 12 2z"/><path d="M12 12l2.9 3.1A4 4 0 1 1 8.1 15.1L12 12z"/><path d="M2 12h4M18 12h4M12 2v4M12 18v4"/></svg>
+                    </div>
+                    <h3 class="category-title">AI & Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag tag-ai">Machine Learning</span>
+                        <span class="skill-tag tag-ai">NLP</span>
+                        <span class="skill-tag tag-ai">Image Processing</span>
+                        <span class="skill-tag tag-ai">Neural Networks</span>
+                        <span class="skill-tag tag-ai">Data Preprocessing</span>
+                        <span class="skill-tag tag-ai">Model Training</span>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill-category reveal-up" style="--delay: 0.2s">
+                    <div class="category-icon web-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <h3 class="category-title">Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag tag-web">HTML5</span>
+                        <span class="skill-tag tag-web">CSS3</span>
+                        <span class="skill-tag tag-web">React</span>
+                        <span class="skill-tag tag-web">Node.js</span>
+                        <span class="skill-tag tag-web">MongoDB</span>
+                        <span class="skill-tag tag-web">MERN Stack</span>
+                        <span class="skill-tag tag-web">Three.js</span>
+                    </div>
+                </div>
+
+                <!-- Core CS & Tools -->
+                <div class="skill-category reveal-up" style="--delay: 0.3s">
+                    <div class="category-icon tools-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
+                    <h3 class="category-title">Core CS & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag tag-tool">Data Structures</span>
+                        <span class="skill-tag tag-tool">Algorithms</span>
+                        <span class="skill-tag tag-tool">OOP</span>
+                        <span class="skill-tag tag-tool">MySQL</span>
+                        <span class="skill-tag tag-tool">Git</span>
+                        <span class="skill-tag tag-tool">Problem Solving</span>
+                        <span class="skill-tag tag-tool">Project Management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2 class="section-title">Work Experience</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">AI Intern</h3>
+                                <span class="timeline-company">Centura</span>
+                            </div>
+                            <span class="timeline-date">Sep 2025</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Worked on AI-based projects including <strong>text summarization</strong> and <strong>image classification</strong></li>
+                            <li>Implemented <strong>machine learning algorithms</strong> in Python for real-world problem solving</li>
+                            <li>Assisted in <strong>data preprocessing</strong>, model training, and performance evaluation</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>NLP</span>
+                            <span>Image Classification</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Creative Design Specialist</h3>
+                                <span class="timeline-company">Geni Expert, Islamabad</span>
+                            </div>
+                            <span class="timeline-date">Apr 2024 — Dec 2024</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Delivered creative design solutions including <strong>branding</strong>, marketing materials, and digital assets</li>
+                            <li>Collaborated with clients to translate concepts into engaging visuals</li>
+                            <li>Utilized tools such as <strong>Adobe Creative Suite</strong> and <strong>Canva</strong> for professional design work</li>
+                            <li>Managed <strong>multiple design projects</strong> simultaneously for diverse clients</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Adobe Creative Suite</span>
+                            <span>Canva</span>
+                            <span>Branding</span>
+                            <span>UI Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">A selection of my academic and technical projects</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: BuildMatic AI -->
+                <div class="project-card featured reveal-up">
+                    <div class="project-card-glow"></div>
+                    <div class="project-badge">Featured</div>
+                    <div class="project-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 20h20M5 20V8l7-5 7 5v12"/><path d="M9 20v-5h6v5"/><path d="M9 12h.01M15 12h.01"/></svg>
+                    </div>
+                    <h3 class="project-title">BuiImatic-AI</h3>
+                    <p class="project-subtitle">AI Civil Engineering Assistant & Cost Estimation</p>
+                    <p class="project-description">
+                        An AI-powered web application featuring <strong>2D/3D house visualization</strong>, 
+                        intelligent chatbot, and automated cost estimation for construction projects. 
+                        Built with a modern tech stack combining graphics libraries with AI.
+                    </p>
+                    <div class="project-tech">
+                        <span>MERN Stack</span>
+                        <span>Konva.js</span>
+                        <span>Three.js</span>
+                        <span>AI/ML</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Skin Care Recommendation -->
+                <div class="project-card reveal-up" style="--delay: 0.1s">
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a4 4 0 0 1 4 4c0 1.1-.4 2.1-1.1 2.9L12 12l-2.9-3.1A4 4 0 0 1 12 2z"/><path d="M12 12l2.9 3.1A4 4 0 1 1 8.1 15.1L12 12z"/><circle cx="12" cy="12" r="10"/></svg>
+                    </div>
+                    <h3 class="project-title">Smart Skin Care Recommender</h3>
+                    <p class="project-subtitle">Neural Network-Based Product Recommendation</p>
+                    <p class="project-description">
+                        A neural network system that analyzes user data to provide <strong>personalized 
+                        skincare product recommendations</strong>. Implements deep learning for pattern 
+                        recognition and preference matching.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Neural Networks</span>
+                        <span>Deep Learning</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: Resin Art Website -->
+                <div class="project-card reveal-up" style="--delay: 0.2s">
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3 class="project-title">Resin Art Website</h3>
+                    <p class="project-subtitle">Full-Stack E-Commerce Platform</p>
+                    <p class="project-description">
+                        A complete full-stack website for <strong>resin art product display and management</strong>, 
+                        built with the MERN stack. Features product catalog, user interface, and 
+                        content management capabilities.
+                    </p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Express</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: Hospital Management -->
+                <div class="project-card reveal-up" style="--delay: 0.3s">
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h18v18H3z"/><path d="M12 8v8M8 12h8"/></svg>
+                    </div>
+                    <h3 class="project-title">Hospital Management System</h3>
+                    <p class="project-subtitle">Healthcare Data Management Solution</p>
+                    <p class="project-description">
+                        A comprehensive system for managing <strong>patient records, doctor schedules, 
+                        and appointments</strong>. Built with Java and MySQL, featuring robust database 
+                        operations and user-friendly interface.
+                    </p>
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>MySQL</span>
+                        <span>OOP</span>
+                    </div>
+                </div>
+
+                <!-- Project 5: Ant Colony Optimization -->
+                <div class="project-card reveal-up" style="--delay: 0.4s">
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                    </div>
+                    <h3 class="project-title">Ant Colony Optimization</h3>
+                    <p class="project-subtitle">Bio-Inspired Algorithm Implementation</p>
+                    <p class="project-description">
+                        Implementation of the <strong>Ant Colony Optimization algorithm</strong> for solving 
+                        complex optimization problems. Demonstrates metaheuristic approaches and 
+                        nature-inspired computing techniques.
+                    </p>
+                    <div class="project-tech">
+                        <span>Algorithm Design</span>
+                        <span>Optimization</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+
+                <!-- Project 6: Hajj Application Form -->
+                <div class="project-card reveal-up" style="--delay: 0.5s">
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    </div>
+                    <h3 class="project-title">Hajj Application Form</h3>
+                    <p class="project-subtitle">OOP-Based Data Management</p>
+                    <p class="project-description">
+                        An application system built with <strong>object-oriented programming principles</strong> 
+                        for managing applicant data. Features structured data handling, form 
+                        validation, and efficient data management.
+                    </p>
+                    <div class="project-tech">
+                        <span>OOP</span>
+                        <span>Data Management</span>
+                        <span>Java</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;education&gt;</span>
+                <h2 class="section-title">Education</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="education-cards">
+                <div class="edu-card reveal-up">
+                    <div class="edu-card-accent"></div>
+                    <div class="edu-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
+                    </div>
+                    <div class="edu-content">
+                        <span class="edu-date">Sep 2022 — Sep 2026</span>
+                        <h3 class="edu-degree">Bachelor of Computer Science</h3>
+                        <p class="edu-institution">International Islamic University of Islamabad</p>
+                        <div class="edu-details">
+                            <span class="edu-badge">CGPA: 3.3 / 4.0</span>
+                            <span class="edu-badge">Major: Computer Science</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edu-card reveal-up" style="--delay: 0.15s">
+                    <div class="edu-card-accent accent-2"></div>
+                    <div class="edu-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                    </div>
+                    <div class="edu-content">
+                        <span class="edu-date">2020 — 2022</span>
+                        <h3 class="edu-degree">Intermediate in Computer Science (ICS)</h3>
+                        <p class="edu-institution">Jinnah Institute, Rawalpindi</p>
+                        <div class="edu-details">
+                            <span class="edu-badge">80%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edu-card reveal-up" style="--delay: 0.3s">
+                    <div class="edu-card-accent accent-3"></div>
+                    <div class="edu-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </div>
+                    <div class="edu-content">
+                        <span class="edu-date">2018 — 2020</span>
+                        <h3 class="edu-degree">Matriculation in Biology</h3>
+                        <p class="edu-institution">Girls Comprehensive Higher Secondary School, Rawalpindi</p>
+                        <div class="edu-details">
+                            <span class="edu-badge">87%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section section-alt" id="achievements">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;achievements&gt;</span>
+                <h2 class="section-title">Achievements & Certifications</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="achievements-grid">
+                <div class="achievement-card reveal-up">
+                    <div class="achievement-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+                    </div>
+                    <h3 class="achievement-title">CS50x Puzzle Completion</h3>
+                    <p class="achievement-org">Harvard University</p>
+                    <p class="achievement-description">Completed Harvard's renowned CS50x computer science puzzle challenges, demonstrating strong problem-solving and computational thinking skills.</p>
+                </div>
+
+                <div class="achievement-card reveal-up" style="--delay: 0.15s">
+                    <div class="achievement-icon icon-stanford">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 15l-2 5h4l-2-5z"/><path d="M5 3v4M3 5h4M6 17v4M4 19h4M17 3v4M15 5h4"/><circle cx="12" cy="9" r="6"/></svg>
+                    </div>
+                    <h3 class="achievement-title">Code in Place — Python</h3>
+                    <p class="achievement-org">Stanford University</p>
+                    <p class="achievement-description">Completed Stanford University's Code in Place program, an intensive Python programming course based on CS106A methodology.</p>
+                </div>
+
+                <div class="achievement-card reveal-up" style="--delay: 0.3s">
+                    <div class="achievement-icon icon-pm">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3 class="achievement-title">Prime Minister Laptop Award</h3>
+                    <p class="achievement-org">Government of Pakistan</p>
+                    <p class="achievement-description">Awarded a laptop under the PM Laptop Scheme in recognition of outstanding academic performance and merit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Have a project in mind or want to collaborate? Let's connect!</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <h3 class="contact-heading">Let's Build Something Amazing Together</h3>
+                    <p class="contact-text">
+                        I'm always excited to work on innovative projects, discuss AI applications, 
+                        or explore new opportunities. Feel free to reach out!
+                    </p>
+
+                    <div class="contact-cards">
+                        <a href="mailto:emanshahzadaislam@gmail.com" class="contact-card">
+                            <div class="contact-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-card-label">Email</span>
+                                <span class="contact-card-value">emanshahzadaislam@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="tel:0317-7904674" class="contact-card">
+                            <div class="contact-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-card-label">Phone</span>
+                                <span class="contact-card-value">0317-7904674</span>
+                            </div>
+                        </a>
+
+                        <a href="https://linkedin.com/in/eman-shahzad-06bbb6250" target="_blank" class="contact-card">
+                            <div class="contact-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-card-label">LinkedIn</span>
+                                <span class="contact-card-value">Eman Shahzad</span>
+                            </div>
+                        </a>
+
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-card-label">Location</span>
+                                <span class="contact-card-value">Islamabad, Pakistan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal-right" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" id="name" class="form-input" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" class="form-input" placeholder="Project Collaboration" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-input form-textarea" placeholder="Tell me about your project..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>ES<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">Designed & Built by Eman Shahzad &copy; 2026</p>
+                <div class="footer-socials">
+                    <a href="https://linkedin.com/in/eman-shahzad-06bbb6250" target="_blank" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="mailto:emanshahzadaislam@gmail.com" aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
