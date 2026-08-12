@@ -70,7 +70,6 @@ This portfolio showcases my academic background, technical skills, machine learn
 ## 📬 Contact Me
 
 - **Email**: emanshahzadaislam@gmail.com
-- **Phone**: +92 317 7904674
 - **LinkedIn**: [linkedin.com/in/eman-shahzad-06bbb6250](https://linkedin.com/in/eman-shahzad-06bbb6250)
 - **Portfolio**: [emanshahzad.dev](https://emanshahzad.dev)
 
