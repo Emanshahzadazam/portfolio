@@ -1,10 +1,10 @@
 # ⚡ Eman Shahzad — Personal Portfolio Website
 
-[![Website](https://img.shields.io/badge/emanshahzad.dev-8b5cf6?style=for-the-badge&logo=google-chrome&logoColor=white)](portfolio-eight-bice-64.vercel.app)
+[![Website](https://img.shields.io/badge/emanshahzad.dev-8b5cf6?style=for-the-badge&logo=google-chrome&logoColor=white)](https://portfolio-eight-bice-64.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Eman%20Shahzad-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/eman-shahzad-06bbb6250)
 [![GitHub](https://img.shields.io/badge/GitHub-Emanshahzadazam-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Emanshahzadazam)
 
-Welcome to the repository for my official personal portfolio website, hosted live at **[emanshahzad.dev](portfolio-eight-bice-64.vercel.app)**.
+Welcome to the repository for my official personal portfolio website, hosted live at **[emanshahzad.dev](https://portfolio-eight-bice-64.vercel.app)**.
 
 This portfolio showcases my academic background, technical skills, machine learning/AI projects, work experience, certifications, and achievements as a **Computer Science Graduate** from the **International Islamic University of Islamabad (IIUI)**.
 
@@ -71,7 +71,7 @@ This portfolio showcases my academic background, technical skills, machine learn
 
 - **Email**: emanshahzadazam@gmail.com
 - **LinkedIn**: [linkedin.com/in/eman-shahzad-06bbb6250](https://linkedin.com/in/eman-shahzad-06bbb6250)
-- **Portfolio**: [emanshahzad.dev](portfolio-eight-bice-64.vercel.app)
+- **Portfolio**: [emanshahzad.dev](https://portfolio-eight-bice-64.vercel.app)
 
 ---
 
