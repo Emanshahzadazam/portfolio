@@ -1,6 +1,6 @@
 # ⚡ Eman Shahzad — Personal Portfolio Website
 
-[![Website](https://img.shields.io/badge/Website-emanshahzad.dev-8b5cf6?style=for-the-badge&logo=google-chrome&logoColor=white)](https://emanshahzad.dev)
+[![Website](https://img.shields.io/badge/Website-portfolio-eight-bice-64.vercel.app-8b5cf6?style=for-the-badge&logo=google-chrome&logoColor=white)](portfolio-eight-bice-64.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Eman%20Shahzad-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/eman-shahzad-06bbb6250)
 [![GitHub](https://img.shields.io/badge/GitHub-Emanshahzadazam-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Emanshahzadazam)
 
@@ -69,9 +69,9 @@ This portfolio showcases my academic background, technical skills, machine learn
 
 ## 📬 Contact Me
 
-- **Email**: emanshahzadaislam@gmail.com
+- **Email**: emanshahzadazam@gmail.com
 - **LinkedIn**: [linkedin.com/in/eman-shahzad-06bbb6250](https://linkedin.com/in/eman-shahzad-06bbb6250)
-- **Portfolio**: [emanshahzad.dev](https://emanshahzad.dev)
+- **Portfolio**: [emanshahzad.dev](portfolio-eight-bice-64.vercel.app)
 
 ---
 
